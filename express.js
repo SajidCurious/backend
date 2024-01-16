@@ -1,8 +1,13 @@
 const express = require("express");
 const app = express();
 
-app.get("/", function (req, res) {
-  res.send("Mohammed Wajid");
+app.use(function (req, res, next) {
+  console.log("Hello Br");
+  next();
+});
+
+app.get("/Profile", function (req, res) {
+  res.send("Mohammed Bro");
 });
 
 app.listen(3000);
