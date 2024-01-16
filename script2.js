@@ -1,2 +1,3 @@
-let a = 100;
-console.log(a);
+let oneLinerJoke = require("one-liner-joke");
+
+console.log(oneLinerJoke.getRandomJoke());
