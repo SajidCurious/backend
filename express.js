@@ -1,13 +1,10 @@
 const express = require("express");
 const app = express();
 
-app.use(function (req, res, next) {
-  console.log("Hello Bro");
-  next();
-});
+app.set("view engine", "ejs");
 
 app.get("/Profile", function (req, res) {
-  res.send("Mohammed Bro");
+  res.render("index");
 });
 
 app.listen(3000);
